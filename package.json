@@ -6,12 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node src/server.js",
-    "host": "node src/host-client.js",
-    "client": "node src/client.js"
+    "whoami": "node scripts/whoami.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dgram": "^1.0.1"
+    "crypto": "^1.0.1",
+    "dgram": "^1.0.1",
+    "dotenv": "^8.2.0"
   }
 }
