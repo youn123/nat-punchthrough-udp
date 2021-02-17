@@ -13,7 +13,7 @@ buf.write(message, 1);
 sends = Promise.all([
   client.send(Buffer.from(buf), 0, message.length, 33333, process.env.INTRO_SERVER_1, true),
   // client.send(Buffer.from(message), 0, message.length, 33334, process.env.INTRO_SERVER_1, true),
-  // client.send(Buffer.from(message), 0, message.length, 33333, process.env.INTRO_SERVER_2, true),
+  client.send(Buffer.from(buf), 0, message.length, 33333, process.env.INTRO_SERVER_2, true),
   // client.send(Buffer.from(message), 0, message.length, 33334, process.env.INTRO_SERVER_2, true),
 ]);
 
