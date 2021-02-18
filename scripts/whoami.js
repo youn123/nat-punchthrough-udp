@@ -23,4 +23,8 @@ sends.then(function(results) {
   }
 
   client.close();
-});
+})
+  .catch(err => {
+    console.log('Error while sending UDP messages -- maybe UDP traffic completely blocked?')
+    console.log(err);
+  });
